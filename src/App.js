@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import LatestPodcastSection from './components/LatestPodcastSection';
+import TopicsSection from './components/TopicsSection';
+import ProfileCard from './components/ProfileCard';
+import { profiles } from './data/profile';
+import TrendingPodcastSection from './components/TrendingPodcastSection';
+import SiteFooter from './components/SiteFooter';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <HeroSection/>
+      <LatestPodcastSection/>
+      <TopicsSection/>
+      <TrendingPodcastSection/>
+      <SiteFooter/>
     </div>
   );
 }
